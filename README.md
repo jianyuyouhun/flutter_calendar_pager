@@ -17,7 +17,7 @@
 Add this to your package's pubspec.yaml file:
 
     dependencies:
-        flutter_calendar_pager: ^0.0.1
+        flutter_calendar_pager: ^1.0.0
 
 ### 2. Install it
 

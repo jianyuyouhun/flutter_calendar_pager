@@ -52,6 +52,9 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   DateTime selectedTime = DateTime.now();
+  ViewType viewType = ViewType.MONTH;
+
+  GlobalKey<CalendarState> key = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
@@ -59,22 +62,35 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Container(
-          padding: EdgeInsets.only(top: 12,bottom: 12),
-          child: Calendar(
-            initialDate: selectedTime,
-            child: Container(
-              margin: EdgeInsets.all(25),
-              child: Text('selected date is ${selectedTime.toString()}'),
-            ),
-            onDateChanged: (dateTime) {
-              setState(() {
-                selectedTime = dateTime;
-              });
+      body: Column(
+        children: [
+          GestureDetector(
+            onTap: () {
+              key.currentState.switchViewType();
             },
+            child: Container(
+              padding: EdgeInsets.all(10),
+              child: Text('切换'),
+            ),
           ),
-        ),
+          Container(
+            padding: EdgeInsets.all(12),
+            child: Calendar(
+              key: key,
+              viewType: viewType,
+              initialDate: selectedTime,
+              child: Container(
+                margin: EdgeInsets.all(25),
+                child: Text('selected date is ${selectedTime.toString()}'),
+              ),
+              onDateChanged: (dateTime) {
+                setState(() {
+                  selectedTime = dateTime;
+                });
+              },
+            ),
+          )
+        ],
       ),
     );
   }

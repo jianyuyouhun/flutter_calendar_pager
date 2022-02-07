@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class DateUtil {
@@ -10,7 +9,7 @@ class DateUtil {
   static int MONTH = 30 * DAY;
 
   static String dateTimeToString(
-    DateTime dateTime, {
+    DateTime? dateTime, {
     year = '/',
     month = '/',
     day = ' ',
@@ -29,7 +28,7 @@ class DateUtil {
   }
 
   static String dateToString(
-    DateTime dateTime, {
+    DateTime? dateTime, {
     year = '/',
     month = '/',
   }) {
@@ -39,7 +38,7 @@ class DateUtil {
     return "${dateTime.year}$year${dateTime.month}$month${dateTime.day}";
   }
 
-  static DateTime fromDateTimeString(
+  static DateTime? fromDateTimeString(
     String dateString, {
     String formatYear = '年',
     String formatMonth = '月',
@@ -63,7 +62,7 @@ class DateUtil {
     }
   }
 
-  static DateTime fromDateString(
+  static DateTime? fromDateString(
     String dateString, {
     String formatYear = '年',
     String formatMonth = '月',
@@ -97,9 +96,10 @@ class DateUtil {
         return '六';
       case 7:
         return '日';
+      default:
+        return '';
     }
   }
-
 
   static Color getDayOfWeekColor(int day) {
     switch (day) {
@@ -111,25 +111,73 @@ class DateUtil {
         return Colors.black;
       case 6:
       case 7:
-        return Colors.grey;
+        return Colors.grey.shade600;
+      default:
+        return Colors.grey.shade600;
     }
   }
 
   ///获取目标周的时间戳
   ///cursor  周偏移量
-  static List<DateTime> getTargetWeek(int cursor) {
+  static List<DateTime> getTargetWeekGroup(int cursor) {
     var targetWeekDay = DateTime.now().add(Duration(days: cursor * 7));
-    return getDateWeek(targetWeekDay);
+    return getDateWeekGroup(targetWeekDay);
   }
 
   ///获取目标时间戳所在的周的时间戳
-  static List<DateTime> getDateWeek(DateTime dateTime) {
+  static List<DateTime> getDateWeekGroup(DateTime dateTime) {
     List<DateTime> result = [];
     for (int i = 1; i <= 7; i++) {
       var j = dateTime.weekday - i;
       result.add(dateTime.subtract(Duration(days: j)));
     }
     return result;
+  }
+
+  ///获取目标时间戳所在的月的时间戳
+  static List<DateTime> getDateMonthGroup(DateTime dateTime) {
+    List<DateTime> result = [];
+    DateTime firstDay = getFirstDayInMonth(dateTime);
+    DateTime lastDay = getLastDayInMonth(dateTime);
+    for (var i = 0; i < lastDay.day; i++) {
+      result.add(firstDay.add(Duration(days: i)));
+    }
+    return result;
+  }
+
+  ///获取目标时间戳所在的月的时间戳，并前后补全周一到周日
+  static List<DateTime> getDateMajorMonth(DateTime dateTime, int cursor) {
+    var targetMonth = getTargetMonth(dateTime, cursor);
+    var monthGroup = getDateMonthGroup(targetMonth);
+    var firstWeekDay = monthGroup.first.weekday - 1; //补全前面的周到周一
+    for (var i = 0; i < firstWeekDay; i++) {
+      monthGroup.insert(0, monthGroup.first.subtract(Duration(days: 1)));
+    }
+    var lastWeekDay = 7 - monthGroup.last.weekday; //补全后面的周到周日
+    for (var i = 0; i < lastWeekDay; i++) {
+      monthGroup.add(monthGroup.last.add(Duration(days: 1)));
+    }
+    return monthGroup;
+  }
+
+  ///根据偏移量获取目标月份，比如下个月的31号，不满足的月份取最后一天。
+  static DateTime getTargetMonth(DateTime dateTime, int cursor) {
+    int totalMonth = dateTime.month + cursor;
+    var yearOffset = totalMonth ~/ 12;
+    var month = totalMonth % 12;
+    //先获取目标月份的最后一天。
+    var firstDayInTargetMonth = DateTime(dateTime.year + yearOffset, month, 1);
+    var lastDayInTargetMonth = getLastDayInMonth(firstDayInTargetMonth);
+    if (dateTime.day > lastDayInTargetMonth.day) {
+      //如果当前日期的day大于目标月份的最大day值，返回目标月份最后一天
+      return lastDayInTargetMonth;
+    } //否则返回目标月份对应的当天日期。
+    return DateTime(dateTime.year + yearOffset, month, dateTime.day);
+  }
+
+  ///根据偏移量获取目标周。
+  static DateTime getTargetWeek(DateTime dateTime, int cursor) {
+    return dateTime.add(Duration(days: 7 * cursor));
   }
 
   ///是否是同一天
@@ -140,6 +188,26 @@ class DateUtil {
   ///是否是一周的同一天，比如都是周一，不管实际时间
   static isSameDayOfWeek(DateTime firstDate, DateTime secondDate) {
     return firstDate.weekday == secondDate.weekday;
+  }
+
+  ///是否是同一个月的同一天，比如都是1号，不管月份
+  static isSameDayOfMonth(DateTime firstDate, DateTime secondDate) {
+    return firstDate.day == secondDate.day;
+  }
+
+  ///获取月初的日期
+  static DateTime getFirstDayInMonth(DateTime dateTime) {
+    return DateTime(dateTime.year, dateTime.month, 1);
+  }
+
+  ///获取月末的日期
+  static DateTime getLastDayInMonth(DateTime dateTime) {
+    if (dateTime.month == 12) {
+      //12月直接返回12月31日
+      return DateTime(dateTime.year, 12, 31);
+    }
+    return DateTime(dateTime.year, dateTime.month + 1, 1)
+        .subtract(Duration(days: 1)); //其他先月份加1，然后减一天；
   }
 }
 

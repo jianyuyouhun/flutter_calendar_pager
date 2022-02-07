@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="82d1dcba-729f-4be2-8ad9-398f283230e6" name="Default Changelist" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/img/calendar.jpg" afterDir="false" />
+    <list default="true" id="82d1dcba-729f-4be2-8ad9-398f283230e6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/base_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/base_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/calendar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/calendar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/size_changed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/size_changed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/utils/DateUtil.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/utils/DateUtil.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/flutter_calendar_pager_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/flutter_calendar_pager_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +47,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/src/utils" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -47,12 +56,23 @@
       <recent name="$PROJECT_DIR$/lib/src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Flutter Test.tests in flutter_calendar_pager_test.dart">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
       <method v="2" />
     </configuration>
+    <configuration name="tests in flutter_calendar_pager_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/test/flutter_calendar_pager_test.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.tests in flutter_calendar_pager_test.dart" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -71,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609213272962</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1609213872740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609213872740</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -79,50 +106,29 @@
     <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2466" y="138" key="CommitChangelistDialog2" timestamp="1609213644062">
-      <screen x="1680" y="-82" width="2560" height="1417" />
+    <state width="1628" height="271" key="GridCell.Tab.0.bottom" timestamp="1644205683021">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="2466" y="119" key="CommitChangelistDialog2/1680.-105.2560.1440/0.0.1680.1050@1680.-105.2560.1440" timestamp="1609213272750" />
-    <state x="2466" y="138" key="CommitChangelistDialog2/1680.-82.2560.1417/48.23.1632.1027@1680.-82.2560.1417" timestamp="1609213644062" />
-    <state width="2508" height="409" key="GridCell.Tab.0.bottom" timestamp="1609213439195">
-      <screen x="1680" y="-105" width="2560" height="1440" />
+    <state width="1628" height="271" key="GridCell.Tab.0.bottom/-2560.-365.2560.1415/0.0.1680.1050@0.0.1680.1050" timestamp="1644204552174" />
+    <state width="1628" height="271" key="GridCell.Tab.0.bottom/-2560.-390.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1644205683021" />
+    <state width="1628" height="271" key="GridCell.Tab.0.center" timestamp="1644205683020">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="2508" height="409" key="GridCell.Tab.0.bottom/1680.-105.2560.1440/0.0.1680.1050@1680.-105.2560.1440" timestamp="1609213439195" />
-    <state width="2508" height="395" key="GridCell.Tab.0.bottom/1680.-82.2560.1417/48.23.1632.1027@1680.-82.2560.1417" timestamp="1609212088871" />
-    <state width="2508" height="409" key="GridCell.Tab.0.center" timestamp="1609213439194">
-      <screen x="1680" y="-105" width="2560" height="1440" />
+    <state width="1628" height="271" key="GridCell.Tab.0.center/-2560.-365.2560.1415/0.0.1680.1050@0.0.1680.1050" timestamp="1644204552173" />
+    <state width="1628" height="271" key="GridCell.Tab.0.center/-2560.-390.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1644205683020" />
+    <state width="1628" height="271" key="GridCell.Tab.0.left" timestamp="1644205683020">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="2508" height="409" key="GridCell.Tab.0.center/1680.-105.2560.1440/0.0.1680.1050@1680.-105.2560.1440" timestamp="1609213439194" />
-    <state width="2508" height="395" key="GridCell.Tab.0.center/1680.-82.2560.1417/48.23.1632.1027@1680.-82.2560.1417" timestamp="1609212088870" />
-    <state width="2508" height="409" key="GridCell.Tab.0.left" timestamp="1609213439192">
-      <screen x="1680" y="-105" width="2560" height="1440" />
+    <state width="1628" height="271" key="GridCell.Tab.0.left/-2560.-365.2560.1415/0.0.1680.1050@0.0.1680.1050" timestamp="1644204552172" />
+    <state width="1628" height="271" key="GridCell.Tab.0.left/-2560.-390.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1644205683020" />
+    <state width="1628" height="271" key="GridCell.Tab.0.right" timestamp="1644205683020">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="2508" height="409" key="GridCell.Tab.0.left/1680.-105.2560.1440/0.0.1680.1050@1680.-105.2560.1440" timestamp="1609213439192" />
-    <state width="2508" height="395" key="GridCell.Tab.0.left/1680.-82.2560.1417/48.23.1632.1027@1680.-82.2560.1417" timestamp="1609212088870" />
-    <state width="2508" height="409" key="GridCell.Tab.0.right" timestamp="1609213439194">
-      <screen x="1680" y="-105" width="2560" height="1440" />
+    <state width="1628" height="271" key="GridCell.Tab.0.right/-2560.-365.2560.1415/0.0.1680.1050@0.0.1680.1050" timestamp="1644204552173" />
+    <state width="1628" height="271" key="GridCell.Tab.0.right/-2560.-390.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1644205683020" />
+    <state x="224" y="73" key="SettingsEditor" timestamp="1644201318554">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="2508" height="409" key="GridCell.Tab.0.right/1680.-105.2560.1440/0.0.1680.1050@1680.-105.2560.1440" timestamp="1609213439194" />
-    <state width="2508" height="395" key="GridCell.Tab.0.right/1680.-82.2560.1417/48.23.1632.1027@1680.-82.2560.1417" timestamp="1609212088871" />
-    <state x="2352" y="178" key="SettingsEditor" timestamp="1609213709909">
-      <screen x="1680" y="-82" width="2560" height="1417" />
-    </state>
-    <state x="2352" y="178" key="SettingsEditor/1680.-82.2560.1417/48.23.1632.1027@1680.-82.2560.1417" timestamp="1609213709909" />
-    <state x="2460" y="292" key="Vcs.Push.Dialog.v2" timestamp="1609213327212">
-      <screen x="1680" y="-105" width="2560" height="1440" />
-    </state>
-    <state x="2460" y="292" key="Vcs.Push.Dialog.v2/1680.-105.2560.1440/0.0.1680.1050@1680.-105.2560.1440" timestamp="1609213327212" />
-    <state x="2671" y="445" key="git4idea.ui.GitTagDialog" timestamp="1609213312910">
-      <screen x="1680" y="-105" width="2560" height="1440" />
-    </state>
-    <state x="2671" y="445" key="git4idea.ui.GitTagDialog/1680.-105.2560.1440/0.0.1680.1050@1680.-105.2560.1440" timestamp="1609213312910" />
-    <state width="750" height="535" key="javadoc.popup" timestamp="1609211253246">
-      <screen x="1680" y="-82" width="2560" height="1417" />
-    </state>
-    <state width="750" height="535" key="javadoc.popup/1680.-82.2560.1417/48.23.1632.1027@1680.-82.2560.1417" timestamp="1609211253246" />
-    <state x="2541" y="236" key="search.everywhere.popup" timestamp="1609211487661">
-      <screen x="1680" y="-82" width="2560" height="1417" />
-    </state>
-    <state x="2541" y="236" key="search.everywhere.popup/1680.-82.2560.1417/48.23.1632.1027@1680.-82.2560.1417" timestamp="1609211487661" />
+    <state x="224" y="73" key="SettingsEditor/-2560.-390.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1644201318554" />
   </component>
 </project>
