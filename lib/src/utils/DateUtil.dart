@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class DateUtil {
-  static int SECOND = 1000;
-  static int MINUTE = 60 * SECOND;
-  static int HOUR = 60 * MINUTE;
-  static int DAY = 24 * HOUR;
-  static int WEEK = 7 * DAY;
-  static int MONTH = 30 * DAY;
+  static int second = 1000;
+  static int minute = 60 * second;
+  static int hour = 60 * minute;
+  static int day = 24 * hour;
+  static int week = 7 * day;
+  static int month = 30 * day;
 
   static String dateTimeToString(
     DateTime? dateTime, {

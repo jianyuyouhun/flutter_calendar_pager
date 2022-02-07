@@ -248,6 +248,7 @@ class CalendarState extends WidgetState<Calendar>
     ]);
   }
 
+  // ignore: unused_element
   _pageChanged(int index) {
     if (index == 0) {
       _pageController.jumpToPage(1);

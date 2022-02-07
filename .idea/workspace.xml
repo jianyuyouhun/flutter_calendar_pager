@@ -3,17 +3,38 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="82d1dcba-729f-4be2-8ad9-398f283230e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/base_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/base_state.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/calendar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/calendar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/size_changed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/size_changed.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/utils/DateUtil.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/utils/DateUtil.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/flutter_calendar_pager_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/flutter_calendar_pager_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,14 +119,49 @@
       <option name="project" value="LOCAL" />
       <updated>1609213872740</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1.0.0">
+      <created>1644218857949</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644218857949</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="1.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0.0" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="316" y="46" key="CommitChangelistDialog2" timestamp="1644218857766">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="316" y="46" key="CommitChangelistDialog2/-2560.-390.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1644218857766" />
     <state width="1628" height="271" key="GridCell.Tab.0.bottom" timestamp="1644205683021">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -130,5 +186,18 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="224" y="73" key="SettingsEditor/-2560.-390.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1644201318554" />
+    <state x="340" y="199" key="Vcs.Push.Dialog.v2" timestamp="1644219580002">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="340" y="199" key="Vcs.Push.Dialog.v2/-2560.-365.2560.1415/0.0.1680.1050@0.0.1680.1050" timestamp="1644219580002" />
+    <state x="340" y="199" key="Vcs.Push.Dialog.v2/-2560.-390.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1644218860905" />
+    <state x="522" y="346" key="git4idea.ui.GitTagDialog" timestamp="1644218988964">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="522" y="346" key="git4idea.ui.GitTagDialog/-2560.-365.2560.1415/0.0.1680.1050@0.0.1680.1050" timestamp="1644218988964" />
+    <state x="421" y="18" width="838" height="1032" key="search.everywhere.popup" timestamp="1644222014586">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="421" y="18" width="838" height="1032" key="search.everywhere.popup/-2560.-365.2560.1415/0.0.1680.1050@0.0.1680.1050" timestamp="1644222014586" />
   </component>
 </project>
